@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AA03877C-DA50-454D-951E-2431CB2F50BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{20C437AD-819F-4391-A368-562FA94F9541}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudSuite.BackBonne.Domain", "src\Modules\CloudSuite.BackBonne.Domain\CloudSuite.BackBonne.Domain.csproj", "{08ABFF80-411D-4CBA-8BD3-1A8D72E28505}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudSuite.BackBonne.Application", "src\Modules\CloudSuite.BackBonne.Application\CloudSuite.BackBonne.Application.csproj", "{8A067268-1D39-4227-8DFA-ED5F480D7685}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08ABFF80-411D-4CBA-8BD3-1A8D72E28505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08ABFF80-411D-4CBA-8BD3-1A8D72E28505}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08ABFF80-411D-4CBA-8BD3-1A8D72E28505}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08ABFF80-411D-4CBA-8BD3-1A8D72E28505}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A067268-1D39-4227-8DFA-ED5F480D7685}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A067268-1D39-4227-8DFA-ED5F480D7685}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A067268-1D39-4227-8DFA-ED5F480D7685}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A067268-1D39-4227-8DFA-ED5F480D7685}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{20C437AD-819F-4391-A368-562FA94F9541} = {AA03877C-DA50-454D-951E-2431CB2F50BE}
+		{08ABFF80-411D-4CBA-8BD3-1A8D72E28505} = {20C437AD-819F-4391-A368-562FA94F9541}
+		{8A067268-1D39-4227-8DFA-ED5F480D7685} = {20C437AD-819F-4391-A368-562FA94F9541}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92C7DA59-16B7-4DD4-BCDD-F9F870673F67}
+	EndGlobalSection
+EndGlobal
