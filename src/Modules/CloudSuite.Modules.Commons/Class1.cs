@@ -1,4 +1,4 @@
-﻿namespace CloudSuite.BackBonne.Domain
+﻿namespace CloudSuite.Modules.Commons
 {
     public class Class1
     {
