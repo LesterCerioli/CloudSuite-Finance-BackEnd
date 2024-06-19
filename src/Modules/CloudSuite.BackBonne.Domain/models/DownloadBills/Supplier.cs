@@ -10,6 +10,12 @@ namespace CloudSuite.BackBonne.Domain.models.DownloadBills
 {
     public class Supplier : Entity, IAggregateRoot
     {
+        public Supplier(string? supplierName, CNPJ cNPJ)
+        {
+            SupplierName = supplierName;
+            CNPJ = cNPJ;
+        }
+
         public string? SupplierName { get; private set; }
         
         public CNPJ CNPJ { get; private set; }

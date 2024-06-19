@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudSuite.BackBonne.Domain
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudSuite.BackBonne.Application", "src\Modules\CloudSuite.BackBonne.Application\CloudSuite.BackBonne.Application.csproj", "{8A067268-1D39-4227-8DFA-ED5F480D7685}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudSuite.Modules.Commons", "src\Modules\CloudSuite.Modules.Commons\CloudSuite.Modules.Commons.csproj", "{F616CA9B-B17F-46B6-B0DE-459BFC314D48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudSuite.Modules.Commons", "src\Modules\CloudSuite.Modules.Commons\CloudSuite.Modules.Commons.csproj", "{F616CA9B-B17F-46B6-B0DE-459BFC314D48}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{7331D9CC-92E7-4666-ABFD-B8F6BBF3FC85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudSuite.BackBonne.Application.Tests", "test\CloudSuite.BackBonne.Application.Tests\CloudSuite.BackBonne.Application.Tests.csproj", "{EAF163CA-5034-403F-A762-D2B38C725D5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +35,10 @@ Global
 		{F616CA9B-B17F-46B6-B0DE-459BFC314D48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F616CA9B-B17F-46B6-B0DE-459BFC314D48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F616CA9B-B17F-46B6-B0DE-459BFC314D48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAF163CA-5034-403F-A762-D2B38C725D5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAF163CA-5034-403F-A762-D2B38C725D5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAF163CA-5034-403F-A762-D2B38C725D5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAF163CA-5034-403F-A762-D2B38C725D5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -40,6 +48,7 @@ Global
 		{08ABFF80-411D-4CBA-8BD3-1A8D72E28505} = {20C437AD-819F-4391-A368-562FA94F9541}
 		{8A067268-1D39-4227-8DFA-ED5F480D7685} = {20C437AD-819F-4391-A368-562FA94F9541}
 		{F616CA9B-B17F-46B6-B0DE-459BFC314D48} = {20C437AD-819F-4391-A368-562FA94F9541}
+		{EAF163CA-5034-403F-A762-D2B38C725D5B} = {7331D9CC-92E7-4666-ABFD-B8F6BBF3FC85}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {92C7DA59-16B7-4DD4-BCDD-F9F870673F67}
