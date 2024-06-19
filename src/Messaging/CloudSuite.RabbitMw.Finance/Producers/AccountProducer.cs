@@ -1,7 +1,7 @@
-﻿using Microsoft.Extensions.Options;
-using RabbitMQ.Client;
+﻿using RabbitMQ.Client;
 using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Channels;
@@ -9,16 +9,15 @@ using System.Threading.Tasks;
 
 namespace CloudSuite.RabbitMw.Finance.Producers
 {
-    public class AddressProducer
+    public class AccountProducer
     {
         private readonly RabbitMqSettings _settings;
         private readonly IConnection _connection;
         private readonly IModel _channel;
 
-        public AddressProducer(IOptions<RabbitMqSettings> options)
+        public AccountProducer(RabbitMqSettings settings)
         {
-            _settings = options.Value;
-
+            _settings = settings;
             var factory = new ConnectionFactory()
             {
                 HostName = _settings.HostName,
@@ -26,7 +25,6 @@ namespace CloudSuite.RabbitMw.Finance.Producers
                 Password = _settings.Password,
                 VirtualHost = _settings.VirtualHost
             };
-
             _connection = factory.CreateConnection();
             _channel = _connection.CreateModel();
 

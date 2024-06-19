@@ -15,11 +15,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudSuite.Modules.Commons"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{7331D9CC-92E7-4666-ABFD-B8F6BBF3FC85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudSuite.BackBonne.Application.Tests", "test\CloudSuite.BackBonne.Application.Tests\CloudSuite.BackBonne.Application.Tests.csproj", "{EAF163CA-5034-403F-A762-D2B38C725D5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudSuite.BackBonne.Application.Tests", "test\CloudSuite.BackBonne.Application.Tests\CloudSuite.BackBonne.Application.Tests.csproj", "{EAF163CA-5034-403F-A762-D2B38C725D5B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Rest", "Rest", "{E763C25D-39F5-4E4C-8BD5-7F30A70DB8E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudSuite.Services.Finance.Api", "src\Rest\CloudSuite.Services.Finance.Api\CloudSuite.Services.Finance.Api.csproj", "{27783610-C7B7-4610-B214-36C1EBE57CF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudSuite.Services.Finance.Api", "src\Rest\CloudSuite.Services.Finance.Api\CloudSuite.Services.Finance.Api.csproj", "{27783610-C7B7-4610-B214-36C1EBE57CF8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Messaging", "Messaging", "{86EDDECF-DD9C-4D22-B43B-947B3709F366}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudSuite.RabbitMw.Finance", "src\Messaging\CloudSuite.RabbitMw.Finance\CloudSuite.RabbitMw.Finance.csproj", "{5E5E04BF-D832-4478-801E-83F72CCEB605}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +51,10 @@ Global
 		{27783610-C7B7-4610-B214-36C1EBE57CF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27783610-C7B7-4610-B214-36C1EBE57CF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27783610-C7B7-4610-B214-36C1EBE57CF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E5E04BF-D832-4478-801E-83F72CCEB605}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E5E04BF-D832-4478-801E-83F72CCEB605}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E5E04BF-D832-4478-801E-83F72CCEB605}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E5E04BF-D832-4478-801E-83F72CCEB605}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +67,8 @@ Global
 		{EAF163CA-5034-403F-A762-D2B38C725D5B} = {7331D9CC-92E7-4666-ABFD-B8F6BBF3FC85}
 		{E763C25D-39F5-4E4C-8BD5-7F30A70DB8E0} = {AA03877C-DA50-454D-951E-2431CB2F50BE}
 		{27783610-C7B7-4610-B214-36C1EBE57CF8} = {E763C25D-39F5-4E4C-8BD5-7F30A70DB8E0}
+		{86EDDECF-DD9C-4D22-B43B-947B3709F366} = {AA03877C-DA50-454D-951E-2431CB2F50BE}
+		{5E5E04BF-D832-4478-801E-83F72CCEB605} = {86EDDECF-DD9C-4D22-B43B-947B3709F366}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {92C7DA59-16B7-4DD4-BCDD-F9F870673F67}

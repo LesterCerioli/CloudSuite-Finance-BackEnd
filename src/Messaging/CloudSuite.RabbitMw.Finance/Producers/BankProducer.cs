@@ -1,24 +1,23 @@
-﻿using Microsoft.Extensions.Options;
-using RabbitMQ.Client;
+﻿using RabbitMQ.Client;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime;
 using System.Text;
 using System.Threading.Channels;
 using System.Threading.Tasks;
 
 namespace CloudSuite.RabbitMw.Finance.Producers
 {
-    public class AddressProducer
+    public class BankProducer
     {
-        private readonly RabbitMqSettings _settings;
         private readonly IConnection _connection;
         private readonly IModel _channel;
+        private readonly RabbitMqSettings _settings;
 
-        public AddressProducer(IOptions<RabbitMqSettings> options)
+        public BankProducer(RabbitMqSettings settings)
         {
-            _settings = options.Value;
-
+            _settings = settings;
             var factory = new ConnectionFactory()
             {
                 HostName = _settings.HostName,
@@ -26,7 +25,6 @@ namespace CloudSuite.RabbitMw.Finance.Producers
                 Password = _settings.Password,
                 VirtualHost = _settings.VirtualHost
             };
-
             _connection = factory.CreateConnection();
             _channel = _connection.CreateModel();
 
@@ -35,23 +33,6 @@ namespace CloudSuite.RabbitMw.Finance.Producers
             _channel.QueueBind(queue: _settings.QueueName, exchange: _settings.ExchangeName, routingKey: _settings.RoutingKey);
         }
 
-        public void Publish(string message)
-        {
-            var body = Encoding.UTF8.GetBytes(message);
-            var properties = _channel.CreateBasicProperties();
-            properties.Persistent = true;
 
-            _channel.BasicPublish(exchange: _settings.ExchangeName,
-                                  routingKey: _settings.RoutingKey,
-                                  basicProperties: properties,
-                                  body: body);
-        }
-
-        // Optional: Implement IDisposable to clean up resources
-        public void Dispose()
-        {
-            _channel?.Dispose();
-            _connection?.Dispose();
-        }
     }
 }
