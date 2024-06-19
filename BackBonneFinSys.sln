@@ -17,6 +17,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{7331D9CC-9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudSuite.BackBonne.Application.Tests", "test\CloudSuite.BackBonne.Application.Tests\CloudSuite.BackBonne.Application.Tests.csproj", "{EAF163CA-5034-403F-A762-D2B38C725D5B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Rest", "Rest", "{E763C25D-39F5-4E4C-8BD5-7F30A70DB8E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudSuite.Services.Finance.Api", "src\Rest\CloudSuite.Services.Finance.Api\CloudSuite.Services.Finance.Api.csproj", "{27783610-C7B7-4610-B214-36C1EBE57CF8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,10 @@ Global
 		{EAF163CA-5034-403F-A762-D2B38C725D5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAF163CA-5034-403F-A762-D2B38C725D5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAF163CA-5034-403F-A762-D2B38C725D5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27783610-C7B7-4610-B214-36C1EBE57CF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27783610-C7B7-4610-B214-36C1EBE57CF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27783610-C7B7-4610-B214-36C1EBE57CF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27783610-C7B7-4610-B214-36C1EBE57CF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +57,8 @@ Global
 		{8A067268-1D39-4227-8DFA-ED5F480D7685} = {20C437AD-819F-4391-A368-562FA94F9541}
 		{F616CA9B-B17F-46B6-B0DE-459BFC314D48} = {20C437AD-819F-4391-A368-562FA94F9541}
 		{EAF163CA-5034-403F-A762-D2B38C725D5B} = {7331D9CC-92E7-4666-ABFD-B8F6BBF3FC85}
+		{E763C25D-39F5-4E4C-8BD5-7F30A70DB8E0} = {AA03877C-DA50-454D-951E-2431CB2F50BE}
+		{27783610-C7B7-4610-B214-36C1EBE57CF8} = {E763C25D-39F5-4E4C-8BD5-7F30A70DB8E0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {92C7DA59-16B7-4DD4-BCDD-F9F870673F67}
