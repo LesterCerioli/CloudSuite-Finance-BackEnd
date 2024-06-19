@@ -18,4 +18,11 @@
     <ProjectReference Include="..\CloudSuite.BackBonne.Domain\CloudSuite.BackBonne.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Handlers\DocumentBills\Payments\Requests\" />
+    <Folder Include="Handlers\DocumentBills\Payments\Responses\" />
+    <Folder Include="Handlers\DocumentBills\Suppliers\Requests\" />
+    <Folder Include="Handlers\DocumentBills\Suppliers\Responses\" />
+  </ItemGroup>
+
 </Project>
