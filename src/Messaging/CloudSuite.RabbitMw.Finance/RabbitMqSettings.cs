@@ -8,12 +8,18 @@ namespace CloudSuite.RabbitMw.Finance
 {
     public class RabbitMqSettings
     {
-        public string HostName { get; set; } = "localhost";
+        public string? HostName { get; set; }
 
-        public string QueueName { get; set; } = "addressQueue";
+        public string? UserName { get; set; }
 
-        public string ExchangeName { get; set; } = "addressExchange";
+        public string? Password { get; set; }
 
-        public string RoutingKey { get; set; } = "addressRoutingKey";
+        public string? VirtualHost { get; set; }
+
+        public string? ExchangeName { get; set; }
+
+        public string? QueueName { get; set; }
+
+        public string? RoutingKey { get; set; }
     }
 }

@@ -10,5 +10,7 @@ namespace CloudSuite.BackBonne.Domain.models.BankIntegration
     public class CNAEActivity : Entity, IAggregateRoot
     {
         public string? Description { get; private set; }
+
+        public int? CNAECode { get; private set; }
     }
 }
