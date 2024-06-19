@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CloudSuite.BackBonne.Domain.models.DownloadReceiveBills
+namespace CloudSuite.BackBonne.Domain.models
 {
     public class TED : Entity, IAggregateRoot
     {
