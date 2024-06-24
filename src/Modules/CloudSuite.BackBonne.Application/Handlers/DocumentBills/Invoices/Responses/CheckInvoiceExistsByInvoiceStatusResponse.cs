@@ -5,12 +5,12 @@ namespace CloudSuite.BackBonne.Application.Handlers.DocumentBills.Invoices.Respo
 {
     public class CheckInvoiceExistsByInvoiceStatusResponse : Response
     {
-        public Guid Id { get; private set; }
+        public Guid RequestId { get; private set; }
         public bool Exists { get; set; }
 
-        public CheckInvoiceExistsByInvoiceStatusResponse(Guid id, bool exists, ValidationResult result)
+        public CheckInvoiceExistsByInvoiceStatusResponse(Guid requestId, bool exists, ValidationResult result)
         {
-            Id = id;
+            RequestId = requestId;
             Exists = exists;
             foreach (var item in result.Errors)
             {
@@ -18,12 +18,11 @@ namespace CloudSuite.BackBonne.Application.Handlers.DocumentBills.Invoices.Respo
             }
         }
 
-        public CheckInvoiceExistsByInvoiceStatusResponse(Guid id, string falhaValidacao)
+        public CheckInvoiceExistsByInvoiceStatusResponse(Guid requestId, string falhaValidacao)
         {
-            Id = id;
+            RequestId = requestId;
             Exists = false;
             this.AddError(falhaValidacao);
         }
     }
-}
 }

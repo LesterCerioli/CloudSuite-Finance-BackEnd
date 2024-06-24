@@ -1,13 +1,10 @@
-﻿using CloudSuite.Modules.Commons.Enumerators;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CloudSuite.BackBonne.Application.Handlers.DocumentBills.Invoices.Responses;
+using CloudSuite.Modules.Commons.Enumerators;
+using MediatR;
 
 namespace CloudSuite.BackBonne.Application.Handlers.DocumentBills.Invoices.Requests
 {
-    public class CheckInvoiceExistsByInvoiceStatusRequest
+    public class CheckInvoiceExistsByInvoiceStatusRequest : IRequest<CheckInvoiceExistsByInvoiceStatusResponse>
     {
         public Guid Id { get; private set; }
 
