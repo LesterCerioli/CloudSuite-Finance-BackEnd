@@ -1,5 +1,6 @@
 ﻿
 using CloudSuite.BackBonne.Application;
+using CloudSuite.Modules.Cora.Application.Core;
 using FluentValidation.Results;
 
 namespace CloudSuite.BackBonne.Application.Handlers.AsgardGold.AsgardGoldUser.Responses

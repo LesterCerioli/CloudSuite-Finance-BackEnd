@@ -9,8 +9,14 @@ namespace CloudSuite.BackBonne.Domain.models.AsgardGold
 {
     public class UserClaim : Entity, IAggregateRoot
     {
-        public string Type { get; private set; }
+        public UserClaim(string type, string value)
+        {
+            Type = type;
+            Value = value;
+        }
 
-        public string Value { get; private set; }
+        public string? Type { get; private set; }
+
+        public string? Value { get; private set; }
     }
 }

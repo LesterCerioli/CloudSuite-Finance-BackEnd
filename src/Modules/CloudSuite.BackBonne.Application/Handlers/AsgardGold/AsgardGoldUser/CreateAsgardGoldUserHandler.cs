@@ -1,13 +1,9 @@
 ﻿using CloudSuite.BackBonne.Application.Handlers.AsgardGold.AsgardGoldUser.Responses;
 using CloudSuite.BackBonne.Application.Validations.AsgardGold;
+using CloudSuite.BackBonne.Domain.contracts.AsgardGold;
 using MediatR;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
 
 namespace CloudSuite.BackBonne.Application.Handlers.AsgardGold.AsgardGoldUser
 {
@@ -24,16 +20,16 @@ namespace CloudSuite.BackBonne.Application.Handlers.AsgardGold.AsgardGoldUser
         }
         public async Task<CreateAsgardGoldUserResponse> Handle(CreateAsgardGoldUserCommand command, CancellationToken cancellationToken)
         {
-            _logger.LogInformation($"CreateUserCommand: {JsonSerializer.Serialize(command)}");
+            _logger.LogInformation($"CreateAsgardGoldUserCommand: {JsonSerializer.Serialize(command)}");
             var validationResult = new CreateAsgardGoldUserValidation().Validate(command);
             if (validationResult.IsValid)
             {
                 try
                 {
-                    //var municipalRegister = await _asgardGoldUserRepository.GetByMunicipalRegister(command.Municipal_register);
-                    //var taxRegime = await _asgardGoldUserRepository.GetBySpecialTaxRegime(command.Tax_regime);
 
-                    if (municipalRegister != null && taxRegime != null && specialTaxRegime != null)
+                    var AsgardGoldUserEmail = await _asgardGoldUserRepository.GetByEmail(command.Email);
+
+                    if (AsgardGoldUserEmail != null)
                     {
                         return await Task.FromResult(new CreateAsgardGoldUserResponse(command.Id, "User already registered."));
                     }
@@ -50,4 +46,5 @@ namespace CloudSuite.BackBonne.Application.Handlers.AsgardGold.AsgardGoldUser
             return await Task.FromResult(new CreateAsgardGoldUserResponse(command.Id, validationResult));
 
         }
+    }
 }
