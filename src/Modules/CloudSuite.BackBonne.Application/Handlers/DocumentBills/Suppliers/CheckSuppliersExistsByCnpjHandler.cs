@@ -1,17 +1,10 @@
-﻿using CloudSuite.BackBonne.Application.Handlers.DocumentBills.Payments.Responses;
-using CloudSuite.BackBonne.Application.Handlers.DocumentBills.Suppliers.Requests;
+﻿using CloudSuite.BackBonne.Application.Handlers.DocumentBills.Suppliers.Requests;
 using CloudSuite.BackBonne.Application.Handlers.DocumentBills.Suppliers.Responses;
 using CloudSuite.BackBonne.Domain.contracts.DownloadBills;
-using CloudSuite.Modules.Commons.ValueObject;
 using CloudSuite.Modules.Commons.ValueObjects;
 using MediatR;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
 
 namespace CloudSuite.BackBonne.Application.Handlers.DocumentBills.Suppliers
 {
@@ -35,7 +28,7 @@ namespace CloudSuite.BackBonne.Application.Handlers.DocumentBills.Suppliers
             {
                 try
                 {
-                    var invoice = await _repositorioSupplier.GetByCnpj(new CNPJ(request.Cnpj));
+                    var invoice = await _repositorioSupplier.GetByCnpj(new Cnpj(request.Cnpj));
                     if (invoice != null)
                     {
                         return await Task.FromResult(new CheckSuppliersExistsByCnpjResponse(request.Id, true, validationResult));
