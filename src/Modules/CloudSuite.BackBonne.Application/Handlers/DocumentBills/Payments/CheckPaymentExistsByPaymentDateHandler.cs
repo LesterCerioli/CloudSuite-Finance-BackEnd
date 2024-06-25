@@ -1,15 +1,9 @@
-﻿using CloudSuite.BackBonne.Application.Handlers.DocumentBills.Invoices.Responses;
-using CloudSuite.BackBonne.Application.Handlers.DocumentBills.Payments.Requests;
+﻿using CloudSuite.BackBonne.Application.Handlers.DocumentBills.Payments.Requests;
 using CloudSuite.BackBonne.Application.Handlers.DocumentBills.Payments.Responses;
 using CloudSuite.BackBonne.Domain.contracts.DownloadBills;
 using MediatR;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
 
 namespace CloudSuite.BackBonne.Application.Handlers.DocumentBills.Payments
 {
@@ -17,7 +11,7 @@ namespace CloudSuite.BackBonne.Application.Handlers.DocumentBills.Payments
     {
 
         private IPaymentRepository _repositorioPayment;
-        private readonly ILogger<CheckPaymentExistsByAmountHandler> _logger;
+        private readonly ILogger<CheckPaymentExistsByPaymentDateHandler> _logger;
 
         public CheckPaymentExistsByPaymentDateHandler(IPaymentRepository repositorioPayment, ILogger<CheckPaymentExistsByPaymentDateHandler> logger)
         {
