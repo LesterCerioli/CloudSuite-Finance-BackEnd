@@ -1,5 +1,6 @@
 ﻿using CloudSuite.BackBonne.Application.Handlers.DocumentBills.Suppliers.Requests;
 using CloudSuite.BackBonne.Application.Handlers.DocumentBills.Suppliers.Responses;
+using CloudSuite.BackBonne.Application.Validations.Suppliers;
 using CloudSuite.BackBonne.Domain.contracts.DownloadBills;
 using MediatR;
 using Microsoft.Extensions.Logging;

@@ -20,7 +20,7 @@ namespace CloudSuite.BackBonne.Application.Handlers.DocumentBills.Invoices.Respo
 
         public CheckInvoiceExistsByDueDateResponse(Guid requestId, string falhaValidacao)
         {
-            RequestId = id;
+            RequestId = requestId;
             Exists = false;
             this.AddError(falhaValidacao);
         }

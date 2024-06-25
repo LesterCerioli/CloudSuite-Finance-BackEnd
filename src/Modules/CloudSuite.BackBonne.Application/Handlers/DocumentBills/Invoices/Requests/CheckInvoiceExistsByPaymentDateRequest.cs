@@ -5,13 +5,13 @@ namespace CloudSuite.BackBonne.Application.Handlers.DocumentBills.Invoices.Reque
 {
     public class CheckInvoiceExistsByPaymentDateRequest : IRequest<CheckInvoiceExistsPaymentDateResponse>
     {
-        public Guid Id { get; private set; }
+        public Guid RequestId { get; private set; }
         
         public DateTimeOffset PaymentDate { get; private set; }
 
         public CheckInvoiceExistsByPaymentDateRequest(DateTimeOffset paymentDate)
         {
-            Íd = Guid.NewGuid();
+            RequestId = Guid.NewGuid();
             PaymentDate = paymentDate;
         }
     }

@@ -1,4 +1,5 @@
 ﻿using CloudSuite.BackBonne.Application.Handlers.DocumentBills.Invoices.Responses;
+using CloudSuite.BackBonne.Application.Validations.Invoices;
 using CloudSuite.BackBonne.Domain.contracts.DownloadBills;
 using MediatR;
 using Microsoft.Extensions.Logging;
@@ -20,7 +21,7 @@ namespace CloudSuite.BackBonne.Application.Handlers.DocumentBills.Invoices
         public async Task<CreateInvoiceResponse> Handle(CreateInvoiceCommand command, CancellationToken cancellationToken)
         {
             _logger.LogInformation($"CreateSubscriptionCommand: {JsonSerializer.Serialize(command)}");
-            var validationResult = new CreateSubscriptionCommandValidation().Validate(command);
+            var validationResult = new CreateInvoiceCommandValidation().Validate(command);
 
             if (validationResult.IsValid)
             {
@@ -28,7 +29,7 @@ namespace CloudSuite.BackBonne.Application.Handlers.DocumentBills.Invoices
                 {
                     var invoiceAmount = await _repositorioInvoice.GetByAmount(command.Amount);
                     var invoiceDueDate = await _repositorioInvoice.GetByDueDate(command.DueDate);
-                    var invoiceInvoiceStatus = await _repositorioInvoice.GetByInvoiceStatus(command.Status);
+                    var invoiceInvoiceStatus = await _repositorioInvoice.GetByInvoiceStatus(command.InvoiceStatus);
                     var invoicePaymentDate = await _repositorioInvoice.GetByPaymentDate(command.PaymentDate);
 
                     if (invoiceAmount != null && invoiceDueDate != null && invoiceInvoiceStatus != null && invoicePaymentDate != null)

@@ -1,4 +1,5 @@
 ﻿using CloudSuite.BackBonne.Application.Handlers.DocumentBills.Suppliers.Responses;
+using CloudSuite.BackBonne.Application.Validations.Suppliers;
 using CloudSuite.BackBonne.Domain.contracts.DownloadBills;
 using CloudSuite.Modules.Commons.ValueObjects;
 using MediatR;
@@ -21,7 +22,7 @@ namespace CloudSuite.BackBonne.Application.Handlers.DocumentBills.Suppliers
         public async Task<CreateSuppliersResponse> Handle(CreateSupplierCommand command, CancellationToken cancellationToken)
         {
             _logger.LogInformation($"CreateSupplierCommand: {JsonSerializer.Serialize(command)}");
-            var validationResult = new CreateSupplierCommandValidation().Validate(command);
+            var validationResult = new CreateSuppliersCommandValidation().Validate(command);
 
             if (validationResult.IsValid)
             {
