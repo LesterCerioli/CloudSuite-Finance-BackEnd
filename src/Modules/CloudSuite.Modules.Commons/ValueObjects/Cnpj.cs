@@ -3,17 +3,17 @@ using System.Security.Cryptography;
 
 namespace CloudSuite.Modules.Commons.ValueObjects
 {
-    public class CNPJ : ValueObject
+    public class Cnpj : ValueObject
     {
         private string _cnpjNumber;
 
         // Constructor that sets the CNPJ number and performs validation
-        public CNPJ(string cnpjNumber)
+        public Cnpj(string cnpjNumber)
         {
             SetCnpjNumber(cnpjNumber);
         }
 
-        public CNPJ()
+        public Cnpj()
         {
         }
 
@@ -32,10 +32,10 @@ namespace CloudSuite.Modules.Commons.ValueObjects
         }
 
         // Implicit conversion from string to Cnpj
-        public static implicit operator CNPJ(string value) => new CNPJ(value);
+        public static implicit operator Cnpj(string value) => new Cnpj(value);
 
         // Explicit conversion from Cnpj to string
-        public static explicit operator string(CNPJ cnpj) => cnpj.CnpjNumber;
+        public static explicit operator string(Cnpj cnpj) => cnpj.CnpjNumber;
 
         // Private method to validate the CNPJ number
         private bool IsValid(string cnpjNumber)

@@ -5,7 +5,7 @@ namespace CloudSuite.BackBonne.Domain.contracts.DownloadBills
 {
     public interface ISupplierRepository
     {
-        Task<Supplier> GetByCnpj(CNPJ Cnpj);
+        Task<Supplier> GetByCnpj(Cnpj Cnpj);
 
         Task<Supplier> GetBySupplierName(string supplierName);
 

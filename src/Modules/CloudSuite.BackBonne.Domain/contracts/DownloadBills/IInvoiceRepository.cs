@@ -10,13 +10,13 @@ namespace CloudSuite.BackBonne.Domain.contracts.DownloadBills
 {
     public interface IInvoiceRepository
     {
-        Task<Invoice> GetByAmount(decimal amount);
+        Task<Invoice> GetByAmount(decimal? amount);
 
-        Task<Invoice> GetByDueDate(DateTime dueDate);
+        Task<Invoice> GetByDueDate(DateTime? dueDate);
 
-        Task<Invoice> GetByPaymentDate(DateTimeOffset paymentDate);
+        Task<Invoice> GetByPaymentDate(DateTimeOffset? paymentDate);
 
-        Task<Invoice> GetByInvoiceStatus(InvoiceStatus status);
+        Task<Invoice> GetByInvoiceStatus(InvoiceStatus? status);
 
         Task<IEnumerable<Invoice>> GetList();
 
