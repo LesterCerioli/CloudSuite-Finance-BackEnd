@@ -1,4 +1,5 @@
-﻿using CloudSuite.Modules.Commons.ValueObject;
+﻿using CloudSuite.Modules.Common.ValueObjects;
+using CloudSuite.Modules.Commons.ValueObject;
 using NetDevPack.Domain;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ namespace CloudSuite.BackBonne.Domain.models.DownloadBills
 {
     public class Supplier : Entity, IAggregateRoot
     {
-        public Supplier(string? supplierName, CNPJ cNPJ)
+        public Supplier(string? supplierName, Cnpj cNPJ)
         {
             SupplierName = supplierName;
             CNPJ = cNPJ;
@@ -18,7 +19,7 @@ namespace CloudSuite.BackBonne.Domain.models.DownloadBills
 
         public string? SupplierName { get; private set; }
         
-        public CNPJ CNPJ { get; private set; }
+        public Cnpj CNPJ { get; private set; }
 
         // Relacionamento
         public ICollection<Invoice> Invoices { get; private set; }

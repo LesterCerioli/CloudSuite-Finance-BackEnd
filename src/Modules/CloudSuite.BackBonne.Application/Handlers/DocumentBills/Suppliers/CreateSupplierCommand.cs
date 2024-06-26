@@ -1,5 +1,5 @@
 ﻿using CloudSuite.BackBonne.Application.Handlers.DocumentBills.Suppliers.Responses;
-using CloudSuite.Modules.Common.Valueobjects;
+using CloudSuite.Modules.Common.ValueObjects;
 using MediatR;
 using SupplierEntity = CloudSuite.BackBonne.Domain.models.DownloadBills.Supplier;
 

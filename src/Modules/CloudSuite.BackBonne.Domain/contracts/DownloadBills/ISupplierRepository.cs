@@ -1,4 +1,5 @@
 ﻿using CloudSuite.BackBonne.Domain.models.DownloadBills;
+using CloudSuite.Modules.Common.ValueObjects;
 using CloudSuite.Modules.Commons.ValueObject;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ namespace CloudSuite.BackBonne.Domain.contracts.DownloadBills
 {
     public interface ISupplierRepository
     {
-        Task<Supplier> GetByCnpj(CNPJ cNPJ);
+        Task<Supplier> GetByCnpj(Cnpj cNPJ);
 
         Task<Supplier> GetBySupplierName(string supplierName);
 
