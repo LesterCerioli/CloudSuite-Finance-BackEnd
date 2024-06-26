@@ -1,5 +1,5 @@
 ﻿using CloudSuite.BackBonne.Domain.models.DownloadBills;
-using CloudSuite.Modules.Commons.ValueObjects;
+using CloudSuite.Modules.Common.Valueobjects;
 
 namespace CloudSuite.BackBonne.Domain.contracts.DownloadBills
 {

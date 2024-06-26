@@ -1,5 +1,4 @@
-﻿using CloudSuite.Modules.Commons.ValueObject;
-using CloudSuite.Modules.Commons.ValueObjects;
+﻿using CloudSuite.Modules.Common.Valueobjects;
 using NetDevPack.Domain;
 using System;
 using System.Collections.Generic;

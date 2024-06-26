@@ -15,11 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudSuite.Modules.Commons"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{7331D9CC-92E7-4666-ABFD-B8F6BBF3FC85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudSuite.BackBonne.Application.Tests", "test\CloudSuite.BackBonne.Application.Tests\CloudSuite.BackBonne.Application.Tests.csproj", "{EAF163CA-5034-403F-A762-D2B38C725D5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudSuite.BackBonne.Application.Tests", "test\CloudSuite.BackBonne.Application.Tests\CloudSuite.BackBonne.Application.Tests.csproj", "{EAF163CA-5034-403F-A762-D2B38C725D5B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Rest", "Rest", "{E763C25D-39F5-4E4C-8BD5-7F30A70DB8E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudSuite.Services.Finance.Api", "src\Rest\CloudSuite.Services.Finance.Api\CloudSuite.Services.Finance.Api.csproj", "{27783610-C7B7-4610-B214-36C1EBE57CF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudSuite.Services.Finance.Api", "src\Rest\CloudSuite.Services.Finance.Api\CloudSuite.Services.Finance.Api.csproj", "{27783610-C7B7-4610-B214-36C1EBE57CF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
