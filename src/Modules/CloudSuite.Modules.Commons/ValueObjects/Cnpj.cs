@@ -1,7 +1,6 @@
 ﻿using NetDevPack.Domain;
-using System.Security.Cryptography;
 
-namespace CloudSuite.Modules.Commons.ValueObjects
+namespace CloudSuite.Modules.Common.Valueobjects
 {
     public class Cnpj : ValueObject
     {
