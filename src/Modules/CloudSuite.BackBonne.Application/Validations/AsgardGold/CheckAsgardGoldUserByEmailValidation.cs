@@ -7,7 +7,7 @@ namespace CloudSuite.BackBonne.Application.Validations.AsgardGold
 {
     public class CheckAsgardGoldUserByEmailValidation : AbstractValidator<CheckAsgardGoldUserByEmailRequest>
     {
-        public CreateAsgardGoldUserValidation()
+        public CheckAsgardGoldUserByEmailValidation()
         {
             RuleFor(x => x.Email)
                 .NotEmpty()
