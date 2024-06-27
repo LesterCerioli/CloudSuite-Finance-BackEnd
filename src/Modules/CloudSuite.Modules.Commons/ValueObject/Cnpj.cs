@@ -6,7 +6,7 @@ namespace CloudSuite.Modules.Commons.ValueObject
 {
     public class CNPJ : NetDevPack.Domain.ValueObject
     {
-        public string Cnpj { get; set; }
+        public string Cnpj { get; private set; }
 
         public int IdentificadorMatrizFilial { get; set; }
 
@@ -108,6 +108,23 @@ namespace CloudSuite.Modules.Commons.ValueObject
             public string NomeRepresentanteLegal { get; set; }
 
             public int? CodigoQualificacaoRepresentanteLegal { get; set; }
+        }
+
+        private CNPJ() { } 
+
+        public CNPJ(string cnpj)
+        {
+            Cnpj = cnpj;
+            Validate();
+        }
+
+        private void Validate()
+        {
+            if (string.IsNullOrWhiteSpace(Cnpj))
+                throw new ArgumentException("CNPJ não pode ser vazio.");
+
+            if (Cnpj.Length != 14)
+                throw new ArgumentException("O CNPJ deve conter exatamente 14 dígitos.");
         }
 
         protected override IEnumerable<object> GetEqualityComponents()

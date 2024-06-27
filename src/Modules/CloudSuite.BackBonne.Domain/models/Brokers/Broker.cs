@@ -8,9 +8,9 @@ using NetDevPack.Domain;
 
 namespace CloudSuite.BackBonne.Domain.models.Brokers
 {
-    public class ReturnBrokers : Entity, IAggregateRoot
+    public class Broker : Entity, IAggregateRoot
     {
-        public ReturnBrokers(string bairro, CEP cep, CNPJ cnpj, string codigoCvm, string complemento, DateTime dataInicioSituacao, 
+        public Broker(string bairro, CEP cep, CNPJ cnpj, string codigoCvm, string complemento, DateTime dataInicioSituacao, 
             DateTime dataPatrimonioLiquido, DateTime dataRegistro, string email, string logradouro, string municipio, string nomeSocial, 
             string nomeComercial, string pais, string status, string telefone, string type, string uf, decimal valorPatrimonioLiquido)
         {
@@ -35,7 +35,7 @@ namespace CloudSuite.BackBonne.Domain.models.Brokers
             ValorPatrimonioLiquido = valorPatrimonioLiquido;
         }
      
-        public ReturnBrokers() { }
+        public Broker() { }
 
         public string Bairro { get; private set; }
 
