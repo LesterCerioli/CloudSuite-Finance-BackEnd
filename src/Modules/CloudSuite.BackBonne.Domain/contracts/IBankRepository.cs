@@ -13,6 +13,8 @@ namespace CloudSuite.BackBonne.Domain.contracts
 
         Task<Bank> GetByBankName(string bankName);
 
+        Task<Bank> GetByBankId(string bankId);
+
         Task<IEnumerable<Bank>> GetBankList();
 
         Task Add(Bank bank);
