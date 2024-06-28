@@ -16,4 +16,4 @@ namespace CloudSuite.Modules.Commons.ValueObject.AdmissionalRegisterService
             public string Section { get; set; }
         }
     }
-}  
+}   

@@ -12,4 +12,4 @@ namespace CloudSuite.Modules.Commons.ValueObject.AdmissionalRegisterService
         public string Number { get; set; }
     }
 }
-  
+   

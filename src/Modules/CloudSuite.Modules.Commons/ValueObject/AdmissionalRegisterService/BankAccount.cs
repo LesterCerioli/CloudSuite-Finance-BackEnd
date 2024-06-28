@@ -14,4 +14,4 @@ namespace CloudSuite.Modules.Commons.ValueObject.AdmissionalRegisterService
         public string Account { get; set; }
         public string AccountDigit { get; set; }
     }
-}                       
+}                        

@@ -21,4 +21,4 @@ namespace CloudSuite.Modules.Commons.ValueObject.AdmissionalRegisterService
         Mobile = 2,
         Emergency = 3
     }
-}  
+}    

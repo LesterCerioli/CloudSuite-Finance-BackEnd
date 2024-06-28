@@ -24,4 +24,4 @@ namespace CloudSuite.BackBonne.Domain.models.Accounts_Context
 
         public int? BankId { get; private set; }
     }
-}
+} 

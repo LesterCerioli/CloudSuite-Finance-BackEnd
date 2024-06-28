@@ -18,4 +18,4 @@ namespace CloudSuite.Modules.Commons.ValueObject.AdmissionalRegisterService
         public int? Number { get; set; }
         public string Complement { get; set; }
     }
-}  
+}   
