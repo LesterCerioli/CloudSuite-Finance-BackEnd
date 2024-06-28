@@ -21,3 +21,4 @@ namespace CloudSuite.Modules.Commons.ValueObject.AdmissionalRegisterService
         Spouse = 3
     }
 } 
+ 

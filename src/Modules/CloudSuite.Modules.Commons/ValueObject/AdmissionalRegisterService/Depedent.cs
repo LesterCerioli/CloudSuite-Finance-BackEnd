@@ -15,4 +15,4 @@ namespace CloudSuite.Modules.Commons.ValueObject.AdmissionalRegisterService
         public DateTime dtBirth { get; set; }
         public string TaxPayerRegistry { get; set; }
     }
-}
+} 

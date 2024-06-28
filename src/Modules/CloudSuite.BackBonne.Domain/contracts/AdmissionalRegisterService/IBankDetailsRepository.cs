@@ -18,4 +18,4 @@ namespace CloudSuite.BackBonne.Domain.contracts.AdmissionalRegisterService
 
         void Remove(BankDetails bankDetails);
     }
-}
+} 

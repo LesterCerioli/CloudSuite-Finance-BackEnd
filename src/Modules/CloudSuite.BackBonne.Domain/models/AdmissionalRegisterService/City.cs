@@ -27,4 +27,4 @@ namespace CloudSuite.BackBonne.Domain.models.AdmissionalRegisterService
 
         public string Name { get; private set; }
     }
-}
+} 

@@ -14,4 +14,4 @@ namespace CloudSuite.Modules.Commons.ValueObject.AdmissionalRegisterService
         public int UfId { get; set; }
         public DateTime? dtExpedition { get; set; }
     }
-}
+} 

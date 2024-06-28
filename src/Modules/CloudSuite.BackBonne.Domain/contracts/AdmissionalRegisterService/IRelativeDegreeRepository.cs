@@ -18,8 +18,7 @@ namespace CloudSuite.BackBonne.Domain.contracts.AdmissionalRegisterService
         void Update(RelativeDegree relativeDegree); 
 
         void Remove(RelativeDegree relativeDegree);
-
-          
+  
     }
 }   
       

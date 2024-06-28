@@ -53,7 +53,7 @@ namespace CloudSuite.BackBonne.Domain.models.AdmissionalRegisterService
 
         public string Name { get; private set; }
         
-        public string TaxPayer { get; private set; }
+        public string TaxPayer { get; private set; } 
 
         public DateTime? DtBirth { get; private set; }
 
