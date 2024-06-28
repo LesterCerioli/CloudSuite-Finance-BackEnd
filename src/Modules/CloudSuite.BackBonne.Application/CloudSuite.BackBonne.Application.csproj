@@ -18,10 +18,4 @@
     <ProjectReference Include="..\CloudSuite.BackBonne.Domain\CloudSuite.BackBonne.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Handlers\AsgardGold\AsgardGoldUser\Request\" />
-    <Folder Include="Handlers\AsgardGold\Identity\" />
-    <Folder Include="Handlers\AsgardGold\UserClaim\" />
-  </ItemGroup>
-
 </Project>
