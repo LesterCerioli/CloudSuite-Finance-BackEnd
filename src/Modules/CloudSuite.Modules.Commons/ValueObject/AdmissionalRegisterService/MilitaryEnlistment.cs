@@ -11,4 +11,4 @@ namespace CloudSuite.Modules.Commons.ValueObject.AdmissionalRegisterService
         public int MilitaryEnlistmentId { get; set; }
         public string Number { get; set; }
     }
-} 
+}   

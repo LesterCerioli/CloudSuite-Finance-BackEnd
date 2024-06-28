@@ -7,15 +7,15 @@ using System.Web;
 
 namespace AdmissionalRegisterService.Model
 {
-    public class CountryEntity : Entity, IAggregateRoot
+    public class Country : Entity, IAggregateRoot
     {
-        public CountryEntity(int? countryId, string? name)
+        public Country(int? countryId, string? name)
         {
             CountryId = countryId;
             Name = name;
         }
 
-        public CountryEntity() { }
+        public Country() { }
 
         public int? CountryId { get; private set; }
 

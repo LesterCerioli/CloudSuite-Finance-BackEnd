@@ -14,7 +14,9 @@ namespace CloudSuite.BackBonne.Domain.models.Accounts_Context
             Codebank = codebank;
             BankName = bankName;
             BankId = bankId;
-        }
+        } 
+
+        public Bank() { }
 
         public int? Codebank { get; private set; }
 

@@ -1,14 +1,6 @@
-﻿using AdmissionalRegisterService.Model;
-using CloudSuite.Modules.Commons.ValueObject.AdmissionalRegisterService;
+﻿using CloudSuite.Modules.Commons.ValueObject.AdmissionalRegisterService;
 using CloudSuite.Modules.Commons.ValueObject.AdmissionalRegisterService.AdmissionalRegisterService.Model;
-using DocumentFormat.OpenXml.Office2016.Drawing.ChartDrawing;
 using NetDevPack.Domain;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
 using Address = CloudSuite.Modules.Commons.ValueObject.AdmissionalRegisterService.Address;
 
 namespace CloudSuite.BackBonne.Domain.models.AdmissionalRegisterService

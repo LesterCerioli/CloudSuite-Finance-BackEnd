@@ -13,4 +13,4 @@ namespace CloudSuite.Modules.Commons.ValueObject.AdmissionalRegisterService
         public string EmissionInssuer { get; set; }
         public DateTime? dtExpedition { get; set; }
     }
-} 
+}  

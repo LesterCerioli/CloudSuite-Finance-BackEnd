@@ -1,4 +1,6 @@
-﻿namespace CloudSuite.BackBonne.Domain.contracts.AdmissionalEegisterService
+﻿using AdmissionalRegisterService.Model;
+
+namespace CloudSuite.BackBonne.Domain.contracts.AdmissionalEegisterService
 {
     public interface ICourseRepository
     {

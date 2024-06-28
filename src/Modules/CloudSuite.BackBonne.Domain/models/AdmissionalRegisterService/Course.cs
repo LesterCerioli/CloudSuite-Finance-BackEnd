@@ -22,5 +22,5 @@ namespace AdmissionalRegisterService.Model
         [MaxLength(100)]
         public string? Name { get; set; }
 
-    }
+    } 
 }  

@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace CloudSuite.BackBonne.Domain.models.AdmissionalRegisterService
 {
-    public class CityEntity : Entity, IAggregateRoot
+    public class City : Entity, IAggregateRoot
     {
-        public CityEntity(int?  countryId, int? stateId, int? cityId, string? name)
+        public City(int?  countryId, int? stateId, int? cityId, string? name)
         {
             CountryId = countryId;
             StateId = stateId;
@@ -17,7 +17,7 @@ namespace CloudSuite.BackBonne.Domain.models.AdmissionalRegisterService
             Name = name;
         }
 
-        public CityEntity() { }
+        public City() { }
 
         public int? CountryId { get; private set; }
 

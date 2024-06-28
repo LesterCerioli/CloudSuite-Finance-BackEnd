@@ -10,4 +10,4 @@ namespace AdmissionalRegisterService.Model
         public int EmailId { get; set; }
         public string MailName { get; set; }
     }
-} 
+}  

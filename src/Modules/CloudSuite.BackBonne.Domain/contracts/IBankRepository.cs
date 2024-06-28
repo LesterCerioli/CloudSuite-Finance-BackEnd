@@ -23,4 +23,4 @@ namespace CloudSuite.BackBonne.Domain.contracts
 
         void Remove(Bank bank);
     }
-}
+} 
