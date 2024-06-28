@@ -1,7 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using AdmissionalRegisterService.Model;
-using CloudSuite.Domain.Models;
+﻿using AdmissionalRegisterService.Model;
+using MaxMind.GeoIP2.Model;
 
 namespace CloudSuite.BackBonne.Domain.contracts.AdmissionalEegisterService
 {
@@ -17,4 +15,4 @@ namespace CloudSuite.BackBonne.Domain.contracts.AdmissionalEegisterService
 
         void Remove(Country country);
     }
-}
+} 

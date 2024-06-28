@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using AdmissionalRegisterService.Model;
-using CloudSuite.Domain.Models;
+﻿using AdmissionalRegisterService.Model;
 
 namespace CloudSuite.BackBonne.Domain.contracts.AdmissionalRegisterService
 {
@@ -17,4 +14,4 @@ namespace CloudSuite.BackBonne.Domain.contracts.AdmissionalRegisterService
 
         void Remove(EducationLevel educationLevel);
     }
-}
+} 

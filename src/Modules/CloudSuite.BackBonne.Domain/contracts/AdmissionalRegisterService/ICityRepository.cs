@@ -1,4 +1,5 @@
 ﻿using AdmissionalRegisterService.Model;
+using DocumentFormat.OpenXml.Bibliography;
 
 namespace CloudSuite.BackBonne.Domain.contracts.AdmissionalEegisterService
 {
@@ -14,4 +15,4 @@ namespace CloudSuite.BackBonne.Domain.contracts.AdmissionalEegisterService
 
         void Remove(City city);
     }
-}
+} 

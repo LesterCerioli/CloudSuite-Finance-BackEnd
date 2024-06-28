@@ -1,29 +1,30 @@
 ﻿using NetDevPack.Domain;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Web;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace AdmissionalRegisterService.Model
+namespace CloudSuite.BackBonne.Domain.models.AdmissionalRegisterService
 {
-    public class City : Entity, IAggregateRoot
+    public class CityEntity : Entity, IAggregateRoot
     {
-        public int CountryId { get; set; }
-        public int StateId { get; set; }
-        public int CityId { get; set; }
-        [Required(ErrorMessage = "Este campo é de preenchimento obrigatório.")]
-        [MaxLength(50)]
-        public string Name { get; set; }
-
-        public City() { } // Construtor sem parâmetros
-
-        public City(int countryId, int stateId, int cityId, string name)
+        public CityEntity(int countryId, int stateId, int cityId, string name)
         {
             CountryId = countryId;
             StateId = stateId;
             CityId = cityId;
             Name = name;
         }
+
+        public CityEntity() { }
+
+        public int CountryId { get; private set; }
+
+        public int StateId { get; private set; }
+
+        public int CityId { get; private set; }
+
+        public string Name { get; private set; }
     }
 }
