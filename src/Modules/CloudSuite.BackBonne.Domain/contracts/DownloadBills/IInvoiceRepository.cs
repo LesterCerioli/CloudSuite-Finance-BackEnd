@@ -16,7 +16,7 @@ namespace CloudSuite.BackBonne.Domain.contracts.DownloadBills
 
         Task<Invoice> GetByPaymentDate(DateTimeOffset? paymentDate);
 
-        Task<Invoice> GetByInvoiceStatus(InvoiceStatus? status);
+        Task<Invoice> GetByInvoiceStatus(int? status);
 
         Task<IEnumerable<Invoice>> GetList();
 

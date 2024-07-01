@@ -8,9 +8,9 @@ namespace CloudSuite.BackBonne.Application.Handlers.DocumentBills.Invoices.Reque
     {
         public Guid Id { get; private set; }
 
-        public InvoiceStatus InvoiceStatus {  get; private set; }
+        public int InvoiceStatus {  get; private set; }
 
-        public CheckInvoiceExistsByInvoiceStatusRequest(InvoiceStatus invoiceStatus)
+        public CheckInvoiceExistsByInvoiceStatusRequest(int invoiceStatus)
         {
             Id = Guid.NewGuid();
             InvoiceStatus = invoiceStatus;

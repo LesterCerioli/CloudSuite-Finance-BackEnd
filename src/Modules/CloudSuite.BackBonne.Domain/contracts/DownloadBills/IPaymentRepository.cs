@@ -9,7 +9,7 @@ namespace CloudSuite.BackBonne.Domain.contracts.DownloadBills
 
         Task<Payment> GetByPaymentDate(DateTime? paymentDate);
 
-        Task<Payment> GetByPaymentMethod(PaymentMethod? paymentMethod);
+        Task<Payment> GetByPaymentMethod(int? paymentMethod);
 
         Task<IEnumerable<Payment>> GetList();
 

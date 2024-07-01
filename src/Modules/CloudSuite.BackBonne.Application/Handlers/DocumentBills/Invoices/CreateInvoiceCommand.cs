@@ -15,7 +15,7 @@ namespace CloudSuite.BackBonne.Application.Handlers.DocumentBills.Invoices
 
         public DateTimeOffset? PaymentDate { get; set; }
 
-        public InvoiceStatus? InvoiceStatus { get; set; }
+        public int? InvoiceStatus { get; set; }
 
         public CreateInvoiceCommand()
         {
@@ -28,8 +28,8 @@ namespace CloudSuite.BackBonne.Application.Handlers.DocumentBills.Invoices
                 this.Amount,
                 this.DueDate,
                 this.PaymentDate,
-                this.InvoiceStatus
-                );
+                InvoiceStatus = InvoiceStatus
+                ); ;
         }
 
     }
