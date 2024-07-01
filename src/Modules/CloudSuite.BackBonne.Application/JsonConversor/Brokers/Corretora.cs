@@ -4,7 +4,7 @@ using System.Linq;
 using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
-using CloudSuite.Modules.Commons.ValueObject;
+using CloudSuite.Modules.Commons.ValueObjects;
 using Newtonsoft.Json;
 
 namespace CloudSuite.BackBonne.Application.JsonConversor.Brokers
@@ -12,7 +12,7 @@ namespace CloudSuite.BackBonne.Application.JsonConversor.Brokers
     public class Corretora
     {
         [JsonProperty("cnpj")]
-        public CNPJ Cnpj { get; set; }
+        public Cnpj Cnpj { get; set; }
 
         [JsonProperty("type")]
         public string Type { get; set; }
@@ -33,7 +33,7 @@ namespace CloudSuite.BackBonne.Application.JsonConversor.Brokers
         public string Telefone { get; set; }
 
         [JsonProperty("cep")]
-        public CEP Cep { get; set; }
+        public Cep Cep { get; set; }
 
         [JsonProperty("pais")]
         public string Pais { get; set; }

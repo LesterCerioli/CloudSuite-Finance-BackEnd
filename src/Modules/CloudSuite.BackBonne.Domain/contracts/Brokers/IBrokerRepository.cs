@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CloudSuite.BackBonne.Domain.models.Brokers;
-using CloudSuite.Modules.Commons.ValueObject;
+using CloudSuite.Modules.Commons.ValueObjects;
 
 namespace CloudSuite.BackBonne.Domain.contracts.Brokers
 {
@@ -12,7 +12,7 @@ namespace CloudSuite.BackBonne.Domain.contracts.Brokers
     {
         Task<Broker> GetByName(string nomeComercial);
         
-        Task<Broker> GetByCnpj(CNPJ cnpj);
+        Task<Broker> GetByCnpj(Cnpj cnpj);
 
         Task<IEnumerable<Broker>> GetList();
 

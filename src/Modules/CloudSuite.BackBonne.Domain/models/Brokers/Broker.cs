@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CloudSuite.Modules.Commons.ValueObject;
+using CloudSuite.Modules.Commons.ValueObjects;
 using NetDevPack.Domain;
 
 namespace CloudSuite.BackBonne.Domain.models.Brokers
 {
     public class Broker : Entity, IAggregateRoot
     {
-        public Broker(string bairro, CEP cep, CNPJ cnpj, string codigoCvm, string complemento, DateTime dataInicioSituacao, 
+        public Broker(string bairro, Cep cep, Cnpj cnpj, string codigoCvm, string complemento, DateTime dataInicioSituacao, 
             DateTime dataPatrimonioLiquido, DateTime dataRegistro, string email, string logradouro, string municipio, string nomeSocial, 
             string nomeComercial, string pais, string status, string telefone, string type, string uf, decimal valorPatrimonioLiquido)
         {
@@ -39,9 +39,9 @@ namespace CloudSuite.BackBonne.Domain.models.Brokers
 
         public string? Bairro { get; private set; }
 
-        public CEP Cep { get; private set; }
+        public Cep Cep { get; private set; }
 
-        public CNPJ Cnpj { get; private set; }
+        public Cnpj Cnpj { get; private set; }
 
         public string? CodigoCvm { get; private set; }
 
