@@ -2,23 +2,14 @@
 using System.Text.RegularExpressions;
 using NetDevPack.Domain;
 
-namespace CloudSuite.Modules.Commons.ValueObject
+namespace CloudSuite.Modules.Commons.ValueObjects
 {
-    public class CEP : NetDevPack.Domain.ValueObject
+    public class Cep : ValueObject
     {
-        public string Cep { get; private set; }
+        public string CepNumber { get; private set; }
 
-        public string State { get; private set; }
-
-        public string City { get; private set; }
-
-        public string Neighborhood { get; private set; }
-
-        public string Street { get; private set; }
-
-        public string Service { get; private set; }
-
-        public void SetCep(string cep)
+        
+        public void SetCep(string cepNumber)
         {
             if (string.IsNullOrWhiteSpace(cep))
                 throw new ArgumentException("CEP não pode ser vazio.");
@@ -28,7 +19,7 @@ namespace CloudSuite.Modules.Commons.ValueObject
             if (!cepRegex.IsMatch(cep))
                 throw new ArgumentException("Formato de CEP inválido. O CEP deve estar no formato xxxxx-xxx.");
 
-            Cep = cep;
+            CepNumber = cepNumber;
         }
 
         protected override IEnumerable<object> GetEqualityComponents()

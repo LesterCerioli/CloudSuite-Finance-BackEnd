@@ -87,10 +87,8 @@ namespace CloudSuite.BackBonne.Domain.models.BPC
 
         public string? DesCategoryType { get; private set; }
 
-        public string? InstCustomerName2 { get; privaete  set; }
-
+        public string? InstCustomerName2 { get; private set; } // Fixed typo here
 
         public DateTime? RegistryDate { get; private set; }
-        
     }
 }
