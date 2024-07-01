@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CloudSuite.Modules.Commons.ValueObject;
+using CloudSuite.Modules.Commons.ValueObjects;
 
 
 namespace CloudSuite.BackBonne.Domain.models.BPC

@@ -11,25 +11,7 @@ namespace CloudSuite.BackBonne.Domain.models.BPC
     {
 
 
-        public Provision(
-            dateTime sataExecucao,
-            string clearing,
-            string historico,
-            decimal valorPrevisto,
-            string status,
-            string nomeContraparte
-
-        )
-        {
-            DataExecucao = DateTime.Now;
-            Clearing = clearing;
-            Historico = historico;
-            ValorPrevisto = valorPrevisto;
-            Status = status;
-            NomeContraparte = nomeContraparte;
-
-
-        }
+        
         public Provision() {}
         
         public DateTime? DataExecucao { get; private set; }
