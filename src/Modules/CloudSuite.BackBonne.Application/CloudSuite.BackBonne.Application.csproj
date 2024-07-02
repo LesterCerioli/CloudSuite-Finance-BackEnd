@@ -19,17 +19,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Handlers\Administration\Address\Reponses\" />
     <Folder Include="Handlers\Administration\Address\Requests\" />
-    <Folder Include="Handlers\Administration\City\Reponses\" />
     <Folder Include="Handlers\Administration\City\Requests\" />
-    <Folder Include="Handlers\Administration\Country\Reponses\" />
     <Folder Include="Handlers\Administration\Country\Requests\" />
-    <Folder Include="Handlers\Administration\Dependent\Reponses\" />
     <Folder Include="Handlers\Administration\Dependent\Requests\" />
-    <Folder Include="Handlers\Administration\EducationLevel\Reponses\" />
     <Folder Include="Handlers\Administration\EducationLevel\Requests\" />
-    <Folder Include="Handlers\Administration\State\Reponses\" />
     <Folder Include="Handlers\Administration\State\Requests\" />
   </ItemGroup>
 
