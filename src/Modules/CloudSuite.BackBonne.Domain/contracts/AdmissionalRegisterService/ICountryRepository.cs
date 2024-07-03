@@ -4,9 +4,10 @@ namespace CloudSuite.BackBonne.Domain.contracts.AdmissionalEegisterService
 {
     public interface ICountryRepository
     {
-        Task<Country> GetById(int countryId);
+        Task<Country> GetByName(string name);
 
-        Task<IEnumerable<Country>> GetAll();
+        Task<Country> GetByState(State state);
+        Task<IEnumerable<Country>> GetList();
 
         Task Add(Country country);
 

@@ -4,9 +4,11 @@ namespace CloudSuite.BackBonne.Domain.contracts.AdmissionalEegisterService
 {
     public interface ICityRepository
     {
-        Task<City> GetById(int cityId);
+        Task<City> GetByName(string name); 
 
-        Task<IEnumerable<City>> GetAll(); 
+        Task<City> GetByState(State state); 
+
+        Task<IEnumerable<City>> GetList(); 
 
         Task Add(City city);
 

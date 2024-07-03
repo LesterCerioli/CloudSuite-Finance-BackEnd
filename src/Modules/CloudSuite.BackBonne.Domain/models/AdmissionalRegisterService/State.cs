@@ -1,4 +1,5 @@
-﻿using NetDevPack.Domain;
+﻿using AdmissionalRegisterService.Model;
+using NetDevPack.Domain;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -12,17 +13,21 @@ namespace CloudSuite.BackBonne.Domain.models.AdmissionalRegisterService
     {
         public class State : Entity, IAggregateRoot
         {
-            public State(int? stateId, string? name)
+            private readonly List<Country> _countries;
+            public State(Country country, string? name)
             {
-                StateId = stateId;
                 Name = name;
+                Country = country;
+                _countries = new List<Country>();  
             }
 
             public State() { }
 
-            public int? StateId { get; private set; }
+            public string? Name { get; private set; } 
 
-            public string? Name { get; private set; }
+            public Country Country { get; private set; }
+
+            public IReadOnlyCollection<Country> Countries => _countries.AsReadOnly();
         }
     }
 }   

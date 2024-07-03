@@ -9,17 +9,14 @@ namespace AdmissionalRegisterService.Model
 {
     public class Course : Entity, IAggregateRoot 
     {
-        public Course(int? courseId, string? name)
+        public Course( string? name)
         {
-            CourseId = courseId;
-            Name = name;
+            Name = name; 
+
         }
         
          public Course() { }
 
-        public int? CourseId { get; set; }
-        [Required(ErrorMessage = "Este campo é de preenchimento obrigatório.")]
-        [MaxLength(100)]
         public string? Name { get; set; }
 
     } 

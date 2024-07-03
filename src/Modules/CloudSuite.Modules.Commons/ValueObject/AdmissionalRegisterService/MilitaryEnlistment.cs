@@ -6,9 +6,13 @@ using System.Threading.Tasks;
 
 namespace CloudSuite.Modules.Commons.ValueObject.AdmissionalRegisterService
 {
-    public class MilitaryEnlistment
+    public class MilitaryEnlistment: NetDevPack.Domain.ValueObject
     {
-        public int MilitaryEnlistmentId { get; set; }
         public string Number { get; set; }
+
+        protected override IEnumerable<object> GetEqualityComponents()
+        {
+            throw new NotImplementedException();
+        }
     }
 }    

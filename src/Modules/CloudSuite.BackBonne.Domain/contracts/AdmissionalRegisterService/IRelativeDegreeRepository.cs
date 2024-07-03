@@ -1,4 +1,5 @@
 ﻿using CloudSuite.BackBonne.Domain.models.AdmissionalRegisterService;
+using CloudSuite.Modules.Commons.ValueObject.AdmissionalRegisterService;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +10,8 @@ namespace CloudSuite.BackBonne.Domain.contracts.AdmissionalRegisterService
 {
     public interface IRelativeDegreeRepository 
     {
-        Task<RelativeDegree> GetById(int relativeDeegreeId);
-
-        Task<IEnumerable<RelativeDegree>> GetAlll();
+       Task<RelativeDegree> GetByDescriptionCommons(DescriptionCommons descriptionCommons);
+        Task<IEnumerable<RelativeDegree>> GetList();
 
        Task Add(RelativeDegree relativeDegree);
 

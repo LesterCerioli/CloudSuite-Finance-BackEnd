@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace CloudSuite.Modules.Commons.ValueObject.AdmissionalRegisterService
 {
-    public class GeneralRegistration
+    public class GeneralRegistration : NetDevPack.Domain.ValueObject
     {
-        public int GeneralRegistrationId { get; set; }
         public string Number { get; set; }
         public string EmissionInssuer { get; set; }
         public DateTime? dtExpedition { get; set; }
+
+        protected override IEnumerable<object> GetEqualityComponents()
+        {
+            throw new NotImplementedException();
+        }
     }
-}   
+}

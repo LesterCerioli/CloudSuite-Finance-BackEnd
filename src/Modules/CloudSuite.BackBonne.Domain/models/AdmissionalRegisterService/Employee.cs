@@ -1,5 +1,5 @@
-﻿using CloudSuite.Modules.Commons.ValueObject.AdmissionalRegisterService;
-using CloudSuite.Modules.Commons.ValueObject.AdmissionalRegisterService.AdmissionalRegisterService.Model;
+﻿using CloudSuite.Modules.Commons.Enumerators.AdminssionalRegisterService;
+using CloudSuite.Modules.Commons.ValueObject.AdmissionalRegisterService;
 using NetDevPack.Domain;
 using Address = CloudSuite.Modules.Commons.ValueObject.AdmissionalRegisterService.Address;
 
@@ -7,23 +7,23 @@ namespace CloudSuite.BackBonne.Domain.models.AdmissionalRegisterService
 {
     public class Employee : Entity, IAggregateRoot
     {
-        public Employee(int? employeeId, string? name, string? taxPayer, DateTime? dtBirth, int? genderId, int? deficient, int? race, int? maritalStatusId,
-                        int? countryBirth, int? ufBirth, int? cityBirth, int? educationLevelId, string? institutionEducational, int? course, string? nationalRegistry,
+        public Employee( GenderEnum genderEnum , string? name, string? taxPayer, DateTime? dtBirth, int? gender, int? deficient, int? race, int? maritalStatus,
+                        int? countryBirth, int? ufBirth, int? cityBirth, int? educationLevel, string? institutionEducational, int? course, string? nationalRegistry,
                         Address address, GeneralRegistration genRegister, MilitaryEnlistment certMilitary, PIS pis, WorkPermit workPermit, VotersTitle voteTitle,
                         List<Phone> phones, BankAccount bankAccount, List<Parent> parents, List<Dependent> dependents)
         {
-            EmployeeId = employeeId;
+            GenderEnum = genderEnum;
             Name = name;
             TaxPayer = taxPayer;
             DtBirth = dtBirth;
-            GenderId = genderId;
+            Gender = gender;
             Deficient = deficient;
             Race = race;
-            MaritalStatusId = maritalStatusId;
+            MaritalStatus = maritalStatus;
             CountryBirth = countryBirth;
             UfBirth = ufBirth;
             CityBirth = cityBirth;
-            EducationLevelId = educationLevelId;
+            EducationLevel = educationLevel;
             InstitutionEducational = institutionEducational;
             Course = course;
             NationalRegistry = nationalRegistry;
@@ -41,21 +41,21 @@ namespace CloudSuite.BackBonne.Domain.models.AdmissionalRegisterService
 
         public Employee() { }
 
-        public int? EmployeeId { get; private set; }
-
+        
+        public Enum GenderEnum  { get; set; }
         public string? Name { get; private set; }
         
         public string? TaxPayer { get; private set; } 
 
         public DateTime? DtBirth { get; private set; }
 
-        public int? GenderId { get; private set; }
+        public int? Gender { get; private set; }
 
         public int? Deficient { get; private set; }
 
         public int? Race { get; private set; }
 
-        public int? MaritalStatusId { get; private set; }
+        public int? MaritalStatus { get; private set; }
 
         public int? CountryBirth { get; private set; }
 
@@ -63,7 +63,7 @@ namespace CloudSuite.BackBonne.Domain.models.AdmissionalRegisterService
 
         public int? CityBirth { get; private set; }
 
-        public int? EducationLevelId { get; private set; }
+        public int? EducationLevel { get; private set; }
 
         public string? InstitutionEducational { get; private set; }
 
