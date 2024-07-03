@@ -16,9 +16,9 @@ namespace CloudSuite.BackBonne.Application.Handlers.AdviceService.Requests
         {
             RuleFor(c => c.TaxPayerRegistry)
             .NotEmpty()
-            .WithMessage("Campo de Registro de pagador de imposto é obrigatório.")
+            .WithMessage("Campo de Registro de contribuinte é obrigatório.")
             .MinimumLength(1)
-            .WithMessage("Campo de Registro de pagador de imposto deve ter no mínimo 1 caracter.");
+            .WithMessage("Campo de Registro de contribuinte deve ter no mínimo 1 caracter.");
         }
     }
 }
