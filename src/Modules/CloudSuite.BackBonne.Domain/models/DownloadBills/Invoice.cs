@@ -10,6 +10,14 @@ namespace CloudSuite.BackBonne.Domain.models.DownloadBills
 {
     public class Invoice : Entity, IAggregateRoot
     {
+        public Invoice(decimal? amount, DateTime? dueDate, DateTimeOffset? paymentDate, InvoiceStatus status)
+        {
+            Amount = amount;
+            DueDate = dueDate;
+            PaymentDate = paymentDate;
+            Status = status;
+        }
+
         public decimal? Amount { get; private set; }
 
         public DateTime? DueDate { get; private set; }
