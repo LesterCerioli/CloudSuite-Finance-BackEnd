@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CloudSuite.BackBonne.Domain.models.AdviceService;
 
-namespace CloudSuite.BackBonne.Domain.models.AdviceService
+namespace CloudSuite.BackBonne.Domain.contracts.AdviceService
 {
     public interface IInvestmentRepository 
     {
