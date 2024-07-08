@@ -13,4 +13,4 @@ namespace CloudSuite.BackBonne.Domain.contracts.AdmissionalEegisterService
 
         void Remove(Course course);
     }
-}     
+}      

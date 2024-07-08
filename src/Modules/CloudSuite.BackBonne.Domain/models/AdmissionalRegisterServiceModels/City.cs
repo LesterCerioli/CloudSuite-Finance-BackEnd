@@ -28,4 +28,4 @@ namespace CloudSuite.BackBonne.Domain.models.AdmissionalRegisterService
         public IReadOnlyCollection<State> States => _states.AsReadOnly();
 
     }
-}
+} 

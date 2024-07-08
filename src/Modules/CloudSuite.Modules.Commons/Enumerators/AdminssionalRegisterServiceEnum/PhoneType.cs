@@ -12,4 +12,4 @@ namespace CloudSuite.Modules.Commons.Enumerators.AdminssionalRegisterService
         Mobile = 2,
         Emergency = 3
     }
-} 
+}  

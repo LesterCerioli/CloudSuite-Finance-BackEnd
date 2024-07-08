@@ -15,4 +15,4 @@ namespace AdmissionalRegisterService.Model
             throw new NotImplementedException();
         }
     }
-}   
+}    

@@ -16,4 +16,4 @@ namespace CloudSuite.BackBonne.Domain.contracts.AdmissionalEegisterService
 
         void Remove(City city);
     } 
-}    
+}     

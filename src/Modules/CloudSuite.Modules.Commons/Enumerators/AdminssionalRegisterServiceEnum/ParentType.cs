@@ -12,4 +12,4 @@ namespace CloudSuite.Modules.Commons.Enumerators.AdminssionalRegisterService
         Mother = 2,
         Spouse = 3
     }
-}
+} 

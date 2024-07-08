@@ -22,4 +22,4 @@ namespace CloudSuite.BackBonne.Domain.contracts.AdmissionalRegisterService
         void Remove (State state);
     }
 }
-         
+          

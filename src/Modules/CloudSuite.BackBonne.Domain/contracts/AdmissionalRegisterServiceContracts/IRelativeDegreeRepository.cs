@@ -21,4 +21,4 @@ namespace CloudSuite.BackBonne.Domain.contracts.AdmissionalRegisterService
   
     }
 }    
-       
+        

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
-using CloudSuite.Modules.Commons.ValueObjects;
+using CloudSuite.Modules.Common.ValueObjects;
 using Newtonsoft.Json;
 
 namespace CloudSuite.BackBonne.Application.JsonConversor.Brokers

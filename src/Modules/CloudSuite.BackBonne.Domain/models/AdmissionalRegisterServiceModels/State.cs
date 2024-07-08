@@ -30,4 +30,4 @@ namespace CloudSuite.BackBonne.Domain.models.AdmissionalRegisterService
             public IReadOnlyCollection<Country> Countries => _countries.AsReadOnly();
         }
     }
-}   
+}    

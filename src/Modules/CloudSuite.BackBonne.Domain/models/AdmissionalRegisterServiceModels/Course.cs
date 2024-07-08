@@ -20,4 +20,4 @@ namespace AdmissionalRegisterService.Model
         public string? Name { get; set; }
 
     } 
-}   
+}    

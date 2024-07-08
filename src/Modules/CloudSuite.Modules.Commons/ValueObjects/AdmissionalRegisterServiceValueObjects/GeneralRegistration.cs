@@ -17,4 +17,4 @@ namespace CloudSuite.Modules.Commons.ValueObject.AdmissionalRegisterService
             throw new NotImplementedException();
         }
     }
-}
+} 

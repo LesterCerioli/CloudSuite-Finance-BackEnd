@@ -14,4 +14,4 @@ namespace CloudSuite.Modules.Commons.Enumerators.AdminssionalRegisterService
 
         outers = 3
     }
-}
+} 

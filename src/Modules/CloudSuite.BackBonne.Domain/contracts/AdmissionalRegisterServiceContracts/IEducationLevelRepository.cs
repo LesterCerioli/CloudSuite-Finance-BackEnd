@@ -14,4 +14,4 @@ namespace CloudSuite.BackBonne.Domain.contracts.AdmissionalRegisterService
 
         void Remove(EducationLevel educationLevel);
     }
-}     
+}      
