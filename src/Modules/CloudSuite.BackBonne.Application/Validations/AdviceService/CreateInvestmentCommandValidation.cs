@@ -29,16 +29,6 @@ namespace CloudSuite.BackBonne.Application.Validations.AdviceService
             .WithMessage("Perfil de investimento é obrigatório.")
             .MinimumLength(1)
             .WithMessage("Perfil de investimento deve ter no mínimo 1 caracter.");
-
-
-
-
-
-
-
-
-
-
         }
     }
 }
