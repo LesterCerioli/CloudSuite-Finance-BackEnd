@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using NetDevPack.Domain;
 
-namespace CloudSuite.Modules.Commons.ValueObjects
+namespace CloudSuite.Modules.Common.ValueObjects
 {
     public class Cpf : ValueObject
     {

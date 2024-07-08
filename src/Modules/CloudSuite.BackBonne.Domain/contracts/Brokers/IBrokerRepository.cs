@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CloudSuite.BackBonne.Domain.models.Brokers;
-using CloudSuite.Modules.Commons.ValueObjects;
+using CloudSuite.Modules.Common.ValueObjects;
 
 namespace CloudSuite.BackBonne.Domain.contracts.Brokers
 {

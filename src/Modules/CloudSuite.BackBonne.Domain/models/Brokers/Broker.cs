@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CloudSuite.Modules.Commons.ValueObjects;
+using CloudSuite.Modules.Common.ValueObjects;
 using NetDevPack.Domain;
 
 namespace CloudSuite.BackBonne.Domain.models.Brokers

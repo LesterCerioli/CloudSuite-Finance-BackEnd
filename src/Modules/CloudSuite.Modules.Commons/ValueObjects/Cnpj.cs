@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using NetDevPack.Domain;
 
-namespace CloudSuite.Modules.Commons.ValueObjects
+namespace CloudSuite.Modules.Common.ValueObjects
 {
     public class Cnpj : ValueObject
     {
