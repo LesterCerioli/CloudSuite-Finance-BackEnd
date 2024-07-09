@@ -20,8 +20,7 @@ namespace CloudSuite.Infrastructure.Data.Mappings.Dapper.Cora
         {
             var query = @"
                         SELECT
-                            id,
-                            taxPayerRegistry,
+                            taxPayerRegistry as TaxPayerRegistry,
                             name as Name,
                             investmentProfile as InvestmentProfile,
                         FROM
@@ -34,14 +33,11 @@ namespace CloudSuite.Infrastructure.Data.Mappings.Dapper.Cora
         {
             var query = @"
                         SELECT
-                            id,
                             taxPayerRegistry as TaxPayerRegistry,
-                            name as Name,
-                            investmentProfile as InvestmentProfile,
                         FROM
                             msfinance_investments
                         WHERE
-                            taxPayerRegistry = @TaxPayerRegistry";
+                            taxPayerRegistry = @InvestmentTaxPayerRegistry";
 
             return await _connection.QueryFirstOrDefaultAsync<Investment>(query, new { TaxPayerRegistry = taxPayerRegistry });
         }
@@ -50,14 +46,11 @@ namespace CloudSuite.Infrastructure.Data.Mappings.Dapper.Cora
         {
             var query = @"
                         SELECT
-                            id,
-                            taxPayerRegistry as TaxPayerRegistry,
                             name as Name,
-                            investmentProfile as InvestmentProfile,
                         FROM
                             msfinance_investments
                         WHERE
-                            name = @Name";
+                            name = @InvestmentName";
 
             return await _connection.QueryFirstOrDefaultAsync<Investment>(query, new { Name = name });
         }
@@ -66,14 +59,11 @@ namespace CloudSuite.Infrastructure.Data.Mappings.Dapper.Cora
         {
             var query = @"
                         SELECT
-                            id,
-                            taxPayerRegistry as TaxPayerRegistry,
-                            name as Name,
                             investmentProfile as InvestmentProfile,
                         FROM
                             msfinance_investments
                         WHERE
-                            investmentProfile = @InvestmentProfile";
+                            investmentProfile = @InvestmentInvestmentProfile";
 
             return await _connection.QueryFirstOrDefaultAsync<Investment>(query, new { InvestmentProfile = investmentProfile });
         }
