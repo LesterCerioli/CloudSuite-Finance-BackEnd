@@ -30,7 +30,7 @@ namespace CloudSuite.Infrastructure.Context
 
             modelBuilder.Entity<Investment>(c =>
             {
-                c.ToTable("msfinance_Investment");
+                c.ToTable("msfinance_investments");
             });
 
             base.OnModelCreating(modelBuilder);

@@ -15,7 +15,7 @@ namespace CloudSuite.Infrastructure.Mapping
 
             builder.Property(i => i.TaxPayerRegistry)
                 .IsRequired()
-                .HasColumnName("taxPayerRegistry")
+                .HasColumnName("tax_payer_registry")
                 .HasColumnType("varchar(100)");
 
             builder.Property(i => i.Name)
@@ -25,10 +25,10 @@ namespace CloudSuite.Infrastructure.Mapping
 
             builder.Property(i => i.InvestmentProfile)
                 .IsRequired()
-                .HasColumnName("investmentProfile")
+                .HasColumnName("investment_profile")
                 .HasColumnType("varchar(100)");
 
-            builder.ToTable("msfinance_Investment");
+            builder.ToTable("msfinance_investments");
         }
     }
 }

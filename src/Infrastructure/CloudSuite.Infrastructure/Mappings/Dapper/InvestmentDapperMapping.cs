@@ -20,9 +20,9 @@ namespace CloudSuite.Infrastructure.Data.Mappings.Dapper.Cora
         {
             var query = @"
                         SELECT
-                            taxPayerRegistry as TaxPayerRegistry,
-                            name as Name,
-                            investmentProfile as InvestmentProfile,
+                            TaxPayerRegistry,
+                            Name,
+                            InvestmentProfile,
                         FROM
                             msfinance_investments";
 
@@ -33,7 +33,7 @@ namespace CloudSuite.Infrastructure.Data.Mappings.Dapper.Cora
         {
             var query = @"
                         SELECT
-                            taxPayerRegistry as TaxPayerRegistry,
+                            TaxPayerRegistry,
                         FROM
                             msfinance_investments
                         WHERE
@@ -46,7 +46,7 @@ namespace CloudSuite.Infrastructure.Data.Mappings.Dapper.Cora
         {
             var query = @"
                         SELECT
-                            name as Name,
+                            Name,
                         FROM
                             msfinance_investments
                         WHERE
@@ -59,7 +59,7 @@ namespace CloudSuite.Infrastructure.Data.Mappings.Dapper.Cora
         {
             var query = @"
                         SELECT
-                            investmentProfile as InvestmentProfile,
+                            InvestmentProfile,
                         FROM
                             msfinance_investments
                         WHERE
