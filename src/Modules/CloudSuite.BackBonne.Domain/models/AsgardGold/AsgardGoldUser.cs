@@ -14,18 +14,14 @@ namespace CloudSuite.BackBonne.Domain.models.AsgardGold
         {
             Email = email;
             PasswordHash = passwordHash;
-            _userClaims = new List<UserClaim>();
+            
         }
 
         public string? Email { get; private set; }
 
         public string? PasswordHash { get; private set; }
 
-        private readonly List<UserClaim> _userClaims;
-
-        public UserClaim UserClaim { get; private set; }
-
-        public IReadOnlyCollection<UserClaim> UserClaims => _userClaims.AsReadOnly();
+        
 
         public void SetPassword(string password, IPasswordHasher hasher)
         {

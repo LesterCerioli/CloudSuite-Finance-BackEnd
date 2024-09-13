@@ -7,9 +7,17 @@ using System.Threading.Tasks;
 
 namespace CloudSuite.BackBonne.Domain.models.Backbonne
 {
-    internal class User : Entity, IAggregateRoot
+    public class UserBackBonne : Entity, IAggregateRoot
     {
-        public string? Name { get; private set; }
+        public UserBackBonne(string? login, int? companyId, string? token, string? photoURI)
+        {
+            Login = login;
+            CompanyId = companyId;
+            Token = token;
+            PhotoURI = photoURI;
+        }
+
+        public string? Login { get; private set; }
 
         public int? CompanyId { get; private set; }
 

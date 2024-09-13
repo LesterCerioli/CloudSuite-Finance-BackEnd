@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="NetDevPack" Version="6.1.0" />
+    <PackageReference Include="newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
 </Project>
