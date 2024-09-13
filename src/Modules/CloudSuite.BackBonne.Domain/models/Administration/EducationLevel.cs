@@ -9,5 +9,11 @@ namespace CloudSuite.BackBonne.Domain.models.Administration
 {
     public class EducationLevel : Entity, IAggregateRoot
     {
+        public EducationLevel(string? description)
+        {
+            Description = description;
+        }
+
+        public string? Description { get; private set; }
     }
 }
