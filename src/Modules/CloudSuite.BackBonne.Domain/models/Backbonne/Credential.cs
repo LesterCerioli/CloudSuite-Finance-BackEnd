@@ -10,13 +10,22 @@ namespace CloudSuite.BackBonne.Domain.models.Backbonne
 {
     public class Credential : Entity, IAggregateRoot
     {
-        [Required]
-        public string? Login { get; private set; }
+        public Credential(string? password, string? iPAddress)
+        {
+            Password = password;
+            IPAddress = iPAddress;
+            _userBackBonnes = new List<UserBackBonne>();
+        }
 
-        [Required]
+        public UserBackBonne UserBackBonne { get; private set; }
+
+        public IReadOnlyCollection<UserBackBonne> UserBackBonnes => _userBackBonnes.AsReadOnly();
+        
         public string? Password { get; private set; }
 
-        [Required]
+        
         public string? IPAddress { get; private set; }
+
+        private readonly List<UserBackBonne> _userBackBonnes;
     }
 }

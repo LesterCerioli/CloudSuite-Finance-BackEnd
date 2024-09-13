@@ -10,10 +10,9 @@ namespace CloudSuite.BackBonne.Domain.models.Backbonne
 {
     public class Token : Entity, IAggregateRoot
     {
-        [Required]
+        
         public string? Value { get; private set; }
 
-        [Required]
         public string? IPAddress { get; private set; }
     }
 }
